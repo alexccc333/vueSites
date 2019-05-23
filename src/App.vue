@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <MainHeader/>
-    <SectionWatch/>
-    <SectionProgress/>
-    <SectionLets/>
-    <SectionDesign/>
-    <Footer/>
+    <MainHeader v-show="this.$store.state.main"/>
+    <SectionWatch v-show="this.$store.state.main"/>
+    <SectionProgress v-show="this.$store.state.main"/>
+    <SectionLets v-show="this.$store.state.main"/>
+    <SectionDesign v-show="this.$store.state.main"/>
+    <Footer v-show="this.$store.state.main"/>
+    <registr v-show="this.$store.state.registr"/>
+    <MainLogin v-show="this.$store.state.login"></MainLogin>
+
   </div>
 </template>
 
@@ -18,6 +21,7 @@ import SectionDesign from './components/SectionDesign'
 import Footer from './components/Footer'
 import Copyright from './components/Copyright'
 import MainLogin from './components/Login'
+import registr from './components/registr'
 export default {
   name: 'app',
   components: {
@@ -29,11 +33,11 @@ export default {
     Footer,
     Copyright,
     MainLogin,
+    registr
   },
-  data(){
-    return
-    {
-      //status:false,
+  data: function () {
+    return {
+
     }
   },
 }

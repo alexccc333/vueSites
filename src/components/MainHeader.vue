@@ -15,8 +15,8 @@
           <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Login</a></li>
+          <li class="nav-item"><button class="nav-link" href="#">Faq</button></li>
+          <li class="nav-item"><button class="nav-link"  @click="updateLogin">Login</button></li>
         </ul>
       </div>
     </nav>
@@ -37,6 +37,13 @@
 <script>
   export default {
     name: 'header',
+    methods: {
+      updateLogin() {
+        this.$store.state.login = true;
+        this.$store.state.main = false;
+        console.log(this.$store.state.login);
+      }
+    }
   }
 </script>
 
