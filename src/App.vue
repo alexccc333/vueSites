@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainHeader/>
+    <SectionWatch/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import MainHeader from './components/MainHeader.vue'
+import SectionWatch from './components/SectionWatch'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,MainHeader,SectionWatch
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  min-width: 320px;
+  color: #1d1d1d;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
+section{
+  padding: 100px 0;
+}
+h3{
+  font-style: italic;
+  font-size: 42px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+h4{
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
 </style>
