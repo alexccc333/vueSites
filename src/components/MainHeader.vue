@@ -16,7 +16,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Login</a></li>
         </ul>
       </div>
     </nav>
@@ -40,56 +40,7 @@
   }
 </script>
 
-<style scoped>
-  body{
-    font-family: 'Montserrat', sans-serif;
-    min-width: 320px;
-    color: #1d1d1d;
-  }
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-  section{
-    padding: 100px 0;
-  }
-  h3{
-    font-style: italic;
-    font-size: 42px;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  }
-  h4{
-    font-weight: 600;
-    font-size: 44px;
-    margin-bottom: 20px;
-  }
-  .scrollToTop{
-    position: fixed;
-    bottom: 60px;
-    right: 50px;
-    border-radius: 4px;
-    display: none;
-    font-size: 32px;
-    height: 50px;
-    width: 50px;
-    z-index: 1001;
-    color: #fff;
-    transition: all .5s;
-    background-color: #da1757;
-    border: 0;
-    cursor: pointer;
-  }
-  .scrollToTop:hover{
-    background-color: #fff;
-    text-decoration: none;
-    outline: none;
-    color: #da1757;
-    border: 1px solid #da1757;
-  }
-
-
-
-
+<style>
   /* =============================header============================== */
   .main-header{
     background: url(../assets/img/main1.jpg) center no-repeat;
